@@ -1,0 +1,37 @@
+name: flutter_template
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  # getx
+  get: ^4.6.5
+  # dio
+  dio: ^5.4.0
+  # 网络检查
+  connectivity_plus: ^5.0.2
+  # 屏幕适配
+  flutter_screenutil: ^5.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  assets:
+    - assets/
+    - assets/images/
+
+  uses-material-design: true
