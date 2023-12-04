@@ -13,8 +13,8 @@ class AppLife extends StatefulWidget {
 }
 
 class AppLifeState extends State<AppLife> with WidgetsBindingObserver {
-  late AppLifecycleState appLifecycleState;
-  late ConnectivityResult connectivityResult;
+  static late AppLifecycleState appLifecycleState;
+  static late ConnectivityResult connectivityResult;
   // 消息订阅
   late StreamSubscription<ConnectivityResult> subscription;
 
@@ -22,13 +22,6 @@ class AppLifeState extends State<AppLife> with WidgetsBindingObserver {
   void initState() {
     WidgetsBinding.instance.addObserver(this); //生命周期观察👀
     setState(() {
-      //主动获取生命周期
-      appLifecycleState =
-          WidgetsBinding.instance.lifecycleState ?? AppLifecycleState.resumed;
-      //初始化网络状态
-      Connectivity().checkConnectivity().then((value) {
-        connectivityResult = value;
-      });
       //网络状态监听
       subscription = Connectivity().onConnectivityChanged.listen((result) {
         if (result == ConnectivityResult.mobile) {

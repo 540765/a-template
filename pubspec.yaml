@@ -21,15 +21,47 @@ dependencies:
   connectivity_plus: ^5.0.2
   # 屏幕适配
   flutter_screenutil: ^5.7.0
+  # xml存储
+  shared_preferences: ^2.2.2
+  # 设备信息
+  device_info_plus: ^9.1.0
+  # 获取app信息
+  package_info_plus: ^4.2.0
+  # uuid
+  uuid: ^4.1.0
+  # 唯一id
+  flutter_secure_storage: ^8.1.0
+  # 刷新以及加载widget
+  easy_refresh: ^3.3.2+4
+  # 照片文件选择
+  wechat_assets_picker: ^8.4.3
+  wechat_camera_picker: ^4.1.1
+  # 内部浏览器:
+  webview_flutter: ^4.4.2
+  # app评分
+  in_app_review: ^2.0.8
+  # smart_dialog
+  flutter_smart_dialog: ^4.9.5+1
+  # 路经提供
+  path_provider: ^2.1.1
+  # 路径
+  path: ^1.8.2
+  # 图片加载
+  extended_image: ^7.0.2
+  # 数据持久化
+  hive: ^2.2.3
+  # hive插件扩展
+  hive_flutter: ^1.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+    
+  build_runner: ^2.3.3 #编译
+  hive_generator: ^2.0.0 #用于生成对象存储适配器文件
   flutter_lints: ^2.0.0
 
 flutter:
-
   assets:
     - assets/
     - assets/images/
